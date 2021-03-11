@@ -35,6 +35,8 @@ body {
 }
 
 .font-Clock {
+  font-size: 70pt;
+  color: whitesmoke;
 }
 
 .font-Input {
