@@ -1,0 +1,13 @@
+.GuessNumber-Title{
+    display: inline-flex;
+    height: 0px;
+}
+
+.js-InputNumber{
+    width: 60px;
+}
+
+.js-InputRange{
+    width: 180px;
+    display: block;
+}

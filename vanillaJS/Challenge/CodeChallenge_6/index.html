@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS_Casino</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="title-div">
+      <h1 class="Main-title">Random Number Game</h1>
+    </div>
+    <h4 class="Range-Title">Generate a number between 0 and 150</h4>
+    <input
+      class="js-InputRange"
+      type="range"
+      min="0"
+      max="150"
+      value="35"
+      step="5"
+      list="tickmarks"
+    />
+
+    <form class="js-GoPlayForm">
+      <h4 class="GuessNumber-Title">Guess the number</h4>
+      <input class="js-InputNumber" type="number" />
+      <input class="js-PlayButton" type="button" value="Play!" />
+    </form>
+
+    <h4 class="Result-Text"></h4>
+    <h4 class="Result-Text2"></h4>
+    <script src="index.js"></script>
+  </body>
+</html>
