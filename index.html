@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Something</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <button class="initButton">이름 초기화</button>
+    <div class="js-clock">
+      <h1 class="js-title font-Clock"></h1>
+    </div>
+    <div class="weather-outline">
+      <div class="weather-text"> 
+        <span class="js-weather font-weather"></span>
+      </div>
+      <div class="weather-icon">
+        <img src="" class="weather-img"></img>
+      </div>
+    </div>
+
+    <form class="js-form">
+      <input
+        class="font-Input"
+        type="text"
+        placeholder="여기에 당신의 이름을 입력해주세요."
+      />
+    </form>
+    <h4 class="js-greetings greetings font-greeting"></h4>
+    <form class="js-toDoForm">
+      <input
+        class="font-Input"
+        type="text"
+        placeholder="여기에 할일을 입력해주세요."
+      />
+    </form>
+    <ul class="js-toDoList font-toDoList"></ul>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
