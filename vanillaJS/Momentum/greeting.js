@@ -1,6 +1,7 @@
 const form=document.querySelector(".js-form");
 const input = form.querySelector("input");
 const greeting = document.querySelector(".js-greetings");
+const InitButton = document.querySelector(".initButton");
 
 const USER_LS = "currentUser"
 const SHOWING_CN ="showing"
@@ -24,7 +25,7 @@ function askForName(){
 function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerText = `Hi~ 😉 ${text}님 오늘의 할일을 확인하세요 ✔🧾`;
 }
 
 
@@ -39,7 +40,22 @@ function loadName(){
     }
 }
 
+function InitButtonClick(){
+    const currentUser = localStorage.getItem(USER_LS);
+
+    if(currentUser===null){
+        return;
+    }
+    else{
+        localStorage.removeItem(USER_LS);
+        window.location.reload();
+    }
+    
+}
+
+
 function init(){
+    InitButton.addEventListener("click",InitButtonClick)
     loadName();
 }
 
