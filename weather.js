@@ -14,7 +14,7 @@ function getWeather(lat , lng){
         const temperature = json.main.temp;
         const place = json.name;
         const description = json.weather[0].description;
-        weather.innerText =`${temperature} ℃ ${place}`
+        weather.innerText =`${place} ${temperature} ℃`
         var imgURL = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
         weather_img.src = imgURL;
         //$('#weather-img').attr("src", imgURL);

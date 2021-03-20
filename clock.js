@@ -1,5 +1,5 @@
-const clockContainer = document.querySelector(".js-clock");
-const clockTitle = clockContainer.querySelector(".js-title");
+const clockContainer = document.querySelector(".js-Info");
+const clockTitle = clockContainer.querySelector(".js-Clock");
 
 function getTime() {
     const date = new Date();

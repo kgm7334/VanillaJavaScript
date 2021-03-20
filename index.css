@@ -2,14 +2,25 @@ body {
   background-color: rgb(48, 62, 84);
 }
 
+*:focus {
+  outline: none;
+}
+
 .initButton {
-  background: linear-gradient(to bottom, rgb(225, 0, 255), rgb(255, 0, 140));
+  background: linear-gradient(to bottom, rgb(0, 81, 255), rgb(48, 206, 180));
   font-weight: 800;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   margin: 3px;
   height: 40px;
-  border-radius: 15px;
+  border-radius: 35px;
+  box-shadow: 0 0 25px rgb(5, 218, 255);
+  width: 120px;
+  border: none;
+}
+
+.initButton:hover {
+  transform: scale(1.1, 1.1);
 }
 
 input::placeholder {
@@ -24,6 +35,7 @@ input::placeholder {
 .js-form,
 .greetings {
   display: none;
+  margin-bottom: 40px;
 }
 
 .showing {
@@ -46,51 +58,57 @@ input::placeholder {
   width: 100%;
   height: 100%;
   z-index: -1;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 1s linear;
 }
 
-.js-title {
-  margin-top: 10px;
+.js-Info {
+  margin-top: 0px;
   display: flex;
   justify-content: center;
 }
 
-.font-Clock {
-  font-size: 120pt;
-  color: rgb(0, 132, 255);
+.js-Clock {
+  font-size: 100px;
+  height: 50px;
+  text-shadow: 4px 4px 5px rgb(5, 218, 255);
+  color: rgb(255, 255, 255);
 }
 
 .font-Input {
   width: 500px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: 700;
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 2);
-  transition: border-color 0.3s ease-in-out;
+  box-shadow: 0 6px 2px -2px rgb(5, 218, 255);
+  text-shadow: 4px 4px 5px rgb(5, 218, 255);
 }
 
 .font-greeting {
   font-size: 50px;
   color: white;
+  text-shadow: 4px 4px 5px rgb(5, 218, 255);
   font-style: italic;
 }
 
 .font-toDoList {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   color: white;
   font-style: italic;
+  text-shadow: 4px 4px 5px rgb(5, 218, 255);
 }
 
 .font-weather {
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 254);
   display: flex;
   justify-content: center;
   font-weight: 700;
-  margin-left: 630px;
-  background-color: rgba(255, 220, 220, 0.501);
+  text-shadow: 4px 4px 5px rgb(5, 218, 255);
+  margin-bottom: 30px;
 }
 
 .weather-img {
@@ -98,11 +116,17 @@ input::placeholder {
   justify-content: center;
   width: 70px;
   height: 66px;
-  background-color: rgba(255, 220, 220, 0.501);
+  background-color: rgba(3, 240, 240, 0.637);
+  border-radius: 40px;
+  margin-left: 10px;
 }
 
 .weather-outline {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.js-Clock-Outline {
+  display: flex;
+  justify-content: center;
 }

@@ -7,23 +7,28 @@
   </head>
   <body>
     <button class="initButton">이름 초기화</button>
-    <div class="js-clock">
-      <h1 class="js-title font-Clock"></h1>
-    </div>
-    <div class="weather-outline">
-      <div class="weather-text"> 
-        <span class="js-weather font-weather"></span>
+    <div class="js-Info">
+      <div>
+        <div class="js-Clock-Outline">
+          <h1 class="js-Clock"></h1>
+        </div>
+        <div class="weather-outline">
+          <div class="weather-text"> 
+            <span class="js-weather font-weather"></span>
+          </div>
+          <div class="weather-icon">
+            <img src="" class="weather-img"></img>
+          </div>
+        </div> 
       </div>
-      <div class="weather-icon">
-        <img src="" class="weather-img"></img>
-      </div>
     </div>
-
     <form class="js-form">
       <input
         class="font-Input"
         type="text"
-        placeholder="여기에 당신의 이름을 입력해주세요."
+        placeholder="✒여기에 이름을 입력해주세요."
+        onfocus="this.placeholder = ''"
+        onblur="this.placeholder = '✒여기에 이름을 입력해주세요.'"
       />
     </form>
     <h4 class="js-greetings greetings font-greeting"></h4>
@@ -31,7 +36,9 @@
       <input
         class="font-Input"
         type="text"
-        placeholder="여기에 할일을 입력해주세요."
+        placeholder="✒여기에 할일을 입력해주세요."
+        onfocus="this.placeholder = ''"
+        onblur="this.placeholder ='✒여기에 할일을 입력해주세요.'"
       />
     </form>
     <ul class="js-toDoList font-toDoList"></ul>
