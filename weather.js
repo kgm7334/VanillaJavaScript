@@ -29,11 +29,12 @@ function saveCoords(coordsObj){
 function handleGeoSucces(position){
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const coordsObj ={
-        latitude,
-        longitude
-    };
-    saveCoords(coordsObj);
+    
+    //const coordsObj ={
+    //    latitude,
+    //    longitude
+    //};
+    //saveCoords(coordsObj);
     getWeather(latitude,longitude);
 }
 
@@ -47,14 +48,14 @@ function askForCodrds(){
 
 
 function loadCoords(){
-    const loadedCoords = localStorage.getItem(COORDS);
-    if(loadedCoords===null){
+    //const loadedCoords = localStorage.getItem(COORDS);
+    //if(loadedCoords===null){
         askForCodrds();
-    }
-    else{
-        const parsedCoords = JSON.parse(loadedCoords);
-        getWeather(parsedCoords.latitude,parsedCoords.longitude);
-    }
+    //}
+    //else{
+     //   const parsedCoords = JSON.parse(loadedCoords);
+        //getWeather(parsedCoords.latitude,parsedCoords.longitude);
+    //}
 }
 
 
